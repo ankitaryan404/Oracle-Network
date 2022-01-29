@@ -1,0 +1,275 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "oracleAddress",
+						"type": "address"
+					}
+				],
+				"name": "AddOracleEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "callerAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "GetLatestEthPriceEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "oracleAddress",
+						"type": "address"
+					}
+				],
+				"name": "RemoveOracleEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ethPrice",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "callerAddress",
+						"type": "address"
+					}
+				],
+				"name": "SetLatestEthPriceEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "threshold",
+						"type": "uint256"
+					}
+				],
+				"name": "SetThresholdEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_oracle",
+						"type": "address"
+					}
+				],
+				"name": "addOracle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLatestEthPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_oracle",
+						"type": "address"
+					}
+				],
+				"name": "removeOracle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "requestIdToResponse",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "oracleAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "callerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ethPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ethPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_callerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "setLatestEthPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_threshold",
+						"type": "uint256"
+					}
+				],
+				"name": "setThreshold",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Oracle Network/EthPriceOracle.sol": "EthPriceOracle"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Oracle Network/CallerContractInterface.sol": {
+			"keccak256": "0xbd91c8081a9a7360831c0cca80515de24e7be508fe5bb709036df54ebe8c2ef6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7115789eec6ba8394e6b92bb07f133bcd94e37709cff7d87146747e45bde933a",
+				"dweb:/ipfs/QmPrGUyzmMpSMTso27BkGSgRvrmeubAeESKP2rjx45kCx6"
+			]
+		},
+		"Oracle Network/EthPriceOracle.sol": {
+			"keccak256": "0xd76fb31a1c5484fd44b5d27cea89926f61e196cfec79cc5f3780d9bb41c69717",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc443205165accec140b39cc5fb467282b2279fd209d486acc761ea239033ce0",
+				"dweb:/ipfs/QmNYV1JkPkVSH5XH2vGe9TzFe8bdNfrRNdvbV9pw8WEj23"
+			]
+		},
+		"Oracle Network/Ownable.sol": {
+			"keccak256": "0x3bd0b647cf0e8d6e0701538395a56e2a94e9f8a1f454e2cceab0e03ec002856f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7164b9802366d81dd141b790b6535beed343f413d092631fa486aaa5440cdc1a",
+				"dweb:/ipfs/QmeVD1tDTS9qutRHReaguPh6ZfyNEzX2awrjaCXhDApmDg"
+			]
+		},
+		"Oracle Network/Roles.sol": {
+			"keccak256": "0x933902d0a1b2cd4f479f822df74fd48cfbd96ad25d5f9649a81df07c858aded3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3bb2223de549ed062682b2f0b82a0aad924f51933a63cef6ffb3d549b58fb83e",
+				"dweb:/ipfs/QmT9FgwjZrDQtNzPvnW53GiVAnJLAdfVkSDnkjDBWNry8T"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol": {
+			"keccak256": "0xa2f576be637946f767aa56601c26d717f48a0aff44f82e46f13807eea1009a21",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://973868f808e88e21a1a0a01d4839314515ee337ad096286c88e41b74dcc11fc2",
+				"dweb:/ipfs/QmfYuZxRfx2J2xdk4EXN7jKg4bUYEMTaYk9BAw9Bqn4o2Y"
+			]
+		}
+	},
+	"version": 1
+}

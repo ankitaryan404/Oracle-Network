@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ethPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "callback",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Oracle Network/CallerContractInterface.sol": "CallerContractInterface"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Oracle Network/CallerContractInterface.sol": {
+			"keccak256": "0xbd91c8081a9a7360831c0cca80515de24e7be508fe5bb709036df54ebe8c2ef6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7115789eec6ba8394e6b92bb07f133bcd94e37709cff7d87146747e45bde933a",
+				"dweb:/ipfs/QmPrGUyzmMpSMTso27BkGSgRvrmeubAeESKP2rjx45kCx6"
+			]
+		}
+	},
+	"version": 1
+}

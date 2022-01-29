@@ -1,0 +1,47 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Library for managing addresses assigned to a Role.",
+			"kind": "dev",
+			"methods": {},
+			"title": "Roles",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Oracle Network/Roles.sol": "Roles"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Oracle Network/Roles.sol": {
+			"keccak256": "0x933902d0a1b2cd4f479f822df74fd48cfbd96ad25d5f9649a81df07c858aded3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3bb2223de549ed062682b2f0b82a0aad924f51933a63cef6ffb3d549b58fb83e",
+				"dweb:/ipfs/QmT9FgwjZrDQtNzPvnW53GiVAnJLAdfVkSDnkjDBWNry8T"
+			]
+		}
+	},
+	"version": 1
+}

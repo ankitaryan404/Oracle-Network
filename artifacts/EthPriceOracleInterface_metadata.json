@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getLatestEthPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Oracle Network/EthPriceOracleInterface.sol": "EthPriceOracleInterface"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Oracle Network/EthPriceOracleInterface.sol": {
+			"keccak256": "0xf5cc1e2b9e86e6372c0d637cffeb891e8d5244748a1271d9e5763dac4e855db8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1e3555f17402df9c81388a4b3c8d748c9818eec4d271c851be687b12aee6e88a",
+				"dweb:/ipfs/QmXJftmkXYHfuXKVTWzm7188my9eY1ty1YwUHVu6iPjM6z"
+			]
+		}
+	},
+	"version": 1
+}
